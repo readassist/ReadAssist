@@ -153,6 +153,7 @@ if (myloc === null) {
   injectCSS('head');
 } else {
   //Do nothing
+  myloc = null;
 }
 
 
