@@ -1,7 +1,6 @@
-# ReadAssist
-Author: Chaitanya Pinnamaraju
-Chrome Extension
-How it works?
+# ReadAssist (Chrome Extension)
+Author: Chaitanya Pinnamaraju<br/>
+How it works?<br/>
 After the Extension is installed, follow steps below to use Extension:
 A. ReadAssist through right-click and select "ReadAssist -Click to Enable"
 1. Right-click on the web page you are and click "ReadAssist -Click to Enable".
