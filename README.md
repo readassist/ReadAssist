@@ -15,7 +15,7 @@ B. ReadAssist through word select and click "Get Quick Synonym: "
 3. You would get a new ReadAssist tab with word meaning for the first time. Keep this tab open.
 4. Go back to your browser page, highlight with mouse select any other word and click "Get Quick Synonym:".
 5. You would get modal/synonym popup with synonym while the word is captured with English meaning in the ReadAssist tab.
-To disable Extension:
+<br/>To disable Extension:<br/>
 1. Open chrome://extensions in your Chrome Browser, find ReadAssist extension
 2. Click Disable button for the Extension to stop using it. 
 
