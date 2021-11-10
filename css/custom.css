@@ -1,0 +1,92 @@
+section.mainC {
+    text-align: center; 
+}
+
+.container {
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 2px;
+    background: white;
+    overflow: scroll;
+    word-wrap: normal;
+}
+body {
+    font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+    overflow: scroll;
+}
+#wordsClicked {
+    white-space: pre;
+    text-overflow: ellipsis;        
+    line-height: 1px;
+    border-left: 6px solid #0d6efd;
+    background-color: #9ec5fe;
+    margin: 2px;
+    padding: 20 7;
+    overflow: auto;
+}
+/* If screen size is more than 600px wide, set the font-size 1.5em */
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+      font-size: 0.8em;
+    }
+  }
+
+/* If screen size is 600px wide, or less, set the font-size 0.8em */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.7em;
+  }
+}
+
+/* If screen size is more than 992px wide*/
+@media screen and (max-width: 992px) {
+    .container {
+        width: 70%;
+        height: 80%;
+    }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        height: 95%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#tipStart {
+    color: black;
+}
+
+.box {
+    text-align: center;
+    background-color:#074297;
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    height: 60px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    padding: 20 20;
+}
+
+.form-floating > .form-control, .form-floating > .form-select {
+    height: 0px;
+}
+
+.noteInit {
+    color: black;
+}
