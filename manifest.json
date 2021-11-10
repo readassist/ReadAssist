@@ -1,0 +1,52 @@
+{
+    "manifest_version": 3,
+    "name": "ReadAssist",
+    "description": "ReadAssist: Gets you English synonyms or definitions (with parts of Speech) -right click or select word and right-click in Browser",
+    "version": "1.0",
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
+    "action": {
+        "default_title": "ReadAssist"
+    },
+    "icons": {
+        "16": "images/language16.png",
+        "32": "images/language32.png",
+        "48": "images/language64.png",
+        "128": "images/language128.png"
+    },
+    "author": "Chaitanya Pinnamaraju <www.readassist@gmail.com>",
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "all_frames": true,
+        "js":      ["scripts/content.js"]
+    }],
+    "web_accessible_resources": [
+        {
+          "resources": ["scripts/inject.js", "popup.html", "scripts/extension.js", "css/bootstrap.min.css", "css/custom.css"],
+          "matches": ["<all_urls>"]
+        }
+    ],
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "activeTab",
+        "scripting",
+        "storage",
+        "unlimitedStorage"
+    ],
+    "optional_permissions": [
+        "topSites"
+    ],
+    "host_permissions": [
+        "*://*/*"
+      ],
+    "externally_connectable": {
+        "ids": ["*"],
+        "matches": ["https://dictionaryapi.dev/*", "https://localhost/*"]
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; "
+    }
+}
+
