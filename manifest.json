@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "ReadAssist",
     "description": "ReadAssist: Gets you English synonyms or definitions (with parts of Speech) -right click or select word and right-click in Browser",
-    "version": "1.0",
+    "version": "1.1.2",
     "background": {
         "service_worker": "scripts/background.js"
     },
@@ -32,11 +32,7 @@
         "tabs",
         "activeTab",
         "scripting",
-        "storage",
-        "unlimitedStorage"
-    ],
-    "optional_permissions": [
-        "topSites"
+        "storage"
     ],
     "host_permissions": [
         "*://*/*"
