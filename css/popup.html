@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/extension.js" type="text/javascript"></script>
+</head>
+<body>
+    <section class="mainC">
+      <br>
+      <h4><span class="badge bg-primary"><img src="images/language32.png" class="rounded mx-auto d-block">&nbsp;ReadAssist&nbsp;</span></h4>
+    </section>
+    <br>
+    <div class="container">
+        <div class="page-header">
+          <br>
+          <div class="form-floating">
+            <p class="form-control" id="tipStart"></p>
+            <label for="floatingTextarea" class="noteInit"><b>Note: </b>&emsp;Click <b><em>Start</em></b> and keep ReadAssist Tab always <b>OPEN</b> -runs in Background
+            </label>
+          </div>
+          <br>
+          <input type="radio" name="record-state" id="start-assist">&nbsp;&nbsp;Start&emsp;
+          <input type="radio" name="record-state" id="stop-assist">&nbsp;&nbsp;Stop
+          <br>
+          <br>
+          <div id="wordsClicked"><strong>Words: </strong></div>
+          <br>
+          <div id="wordsSynonym">
+            <table class="table table-sm table-responsive table-light table-striped table-hover">
+              <thead> <!--class="table-dark" -->
+                <tr>
+                  <th scope="col">Word</th>
+                  <th scope="col">Synonym/Definition</th>
+                </tr>
+              </thead>
+              <tbody id="wordList">
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br><br>
+        <div class="page-footer">
+          <div class="form-floating">
+            <p class="form-control" id="tipStart"></p>
+            <label for="floatingTextarea" class="noteInit">Credits: Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </label>
+          </div>
+        </div>         
+    </div>
+    <br>
+</body>
+</html>
+
